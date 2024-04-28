@@ -43,7 +43,12 @@ function custom_enqueue_files() {
 	/**
 	 * loads JS files in the footer.
 	 */
-	// wp_enqueue_script( 'highlightjs', plugin_dir_url( __FILE__ ) . 'assets/js/highlight.pack.js', '', '9.9.0', true );
+	//Register Scripts
+	wp_register_script( 'gsap-js', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js', '', '9.9.0', true );
+	wp_register_script( 'ScrollTrigger', 'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js', '', '9.9.0', true );
 
-	// wp_enqueue_script( 'highlightjs-init', plugin_dir_url( __FILE__ ) . 'assets/js/highlight-init.js', '', '1.0.0', true );
+
+	//Enqueue Scripts
+	wp_enqueue_script( 'gsap-js');
+	wp_enqueue_script( 'ScrollTrigger');
 }
