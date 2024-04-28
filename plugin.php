@@ -49,6 +49,7 @@ function custom_enqueue_files() {
 
 
 	//Enqueue Scripts
+	wp_enqueue_script( 'gsapanimationjs', plugin_dir_url( __FILE__ ) . 'assets/js/gsapanimation.js', '', '1.0.0', true );
 	wp_enqueue_script( 'gsap-js');
 	wp_enqueue_script( 'ScrollTrigger');
 }
