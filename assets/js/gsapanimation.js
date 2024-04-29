@@ -11,27 +11,27 @@ function animateFrom(elem, direction) {
     }
     else if (elem.classList.contains("gs_reveal_fromTop")) {
       x = 0;
-      y = -300;
+      y = -900;
     }
     else if (elem.classList.contains("gs_reveal_fromBottom")) {
       x = 0;
-      y = 300;
+      y = 900;
     }
     else if (elem.classList.contains("gs_reveal_fromBottomLeft")) {
       x = -300;
-      y = 300;
+      y = 900;
     }
     else if (elem.classList.contains("gs_reveal_fromBottomRight")) {
       x = 300;
-      y = 300;
+      y = 900;
     } 
     else if (elem.classList.contains("gs_reveal_fromTopLeft")) {
       x = -300;
-      y = -300;
+      y = -900;
     }
     else if (elem.classList.contains("gs_reveal_fromTopRight")) {
       x = 300;
-      y = -300;
+      y = -900;
     }
     elem.style.transform = "translate(" + x + "px, " + y + "px)";
     elem.style.opacity = "0";
